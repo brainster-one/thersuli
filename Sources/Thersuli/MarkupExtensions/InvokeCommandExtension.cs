@@ -7,9 +7,16 @@ namespace Thersuli.MarkupExtensions {
 	using System.Windows.Markup;
 	using System.Xaml;
 
+	public class InvokeCommandEventArgs {
+		public object Sender { get; set; }
+		public object EventArgs { get; set; }
+		public object Parameter { get; set; }
+	}
+
 	public class InvokeCommandExtension : MarkupExtension {
 
 		public string Command { get; set; }
+		public object Parameter { get; set; }
 
 		public override object ProvideValue(IServiceProvider serviceProvider) {
 			try {
@@ -57,10 +64,10 @@ namespace Thersuli.MarkupExtensions {
 			}
 		}
 
-		public void PrivateHandlerGeneric<T>(object Sender, T e) {
+		public void PrivateHandlerGeneric<T>(object sender, T e) {
 			/*string name = Sender.GetType().Name;
 			_targetMethod.Invoke(_target, new object[] { name });*/
-			_command.Execute(e);
+			_command.Execute(new InvokeCommandEventArgs { Sender = sender, EventArgs = e, Parameter = Parameter });
 		}
 
 		private object _target;
