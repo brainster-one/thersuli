@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thersuli", "Thersuli\Thersuli.csproj", "{9983B415-B18E-445E-9D1D-D66FEF5FE46C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thersuli", "Thersuli.csproj", "{9983B415-B18E-445E-9D1D-D66FEF5FE46C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

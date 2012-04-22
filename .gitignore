@@ -4,3 +4,5 @@
 obj
 bin
 TestResults
+Packages/*.nupkg
+Binaries/*

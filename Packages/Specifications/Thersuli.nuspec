@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>0.0.10</version>
+    <authors>brainster</authors>
+    <owners />
+    <projectUrl>https://github.com/brainster-one/thersuli</projectUrl>
+    <id>Thersuli</id>
+    <title />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Thersuli is a MVVM library for silverlight.</description>
+  </metadata>
+  <files>
+    <file src="..\..\Binaries\Thersuli.dll" target="lib\sl5\Thersuli.dll" />
+  </files>
+</package>
